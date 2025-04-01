@@ -185,8 +185,6 @@ function App() {
 
    useEffect(() => {
     axios.get(API_URL)
-      .then(() => console.log("Backend woke up!"))
-      .catch(() => console.warn("Failed to wake up backend"));
   }, []);
 
   const handleFormSubmit = async (formData) => {
