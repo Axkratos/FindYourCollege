@@ -81,5 +81,6 @@ Ensure that your output is a valid JSON array with no additional text.
     # Return the structured recommendation data
     return jsonify({"recommendations": recommendations})
 
+# Run the app
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=5000, debug=False)  # debug set to False
